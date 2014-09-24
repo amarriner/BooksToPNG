@@ -26,7 +26,7 @@ def load_text():
    """Load some text from somewhere for use in processing"""
 
    # Read file in as UTF-8
-   f = codecs.open('little_women.txt', 'r', encoding='utf-8')
+   f = codecs.open('files/little_women.txt', 'r', encoding='utf-8')
    text = f.read()
    f.close()
 
@@ -85,7 +85,7 @@ def main():
    # Copy the temp image to a smaller image of the appropriate height
    smaller = gd.image((DIMENSIONS[0], coords[1] + 1), True)
    image.copyTo(smaller, (0, 0), (0, 0), (DIMENSIONS[0], coords[1] + 1))
-   smaller.writePng('/home/amarriner/public_html/book.png')
+   smaller.writePng('files/book.png')
 
 
 if __name__ == '__main__':

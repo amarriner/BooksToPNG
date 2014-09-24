@@ -10,10 +10,10 @@ def main():
    """Initial entry point"""
 
    # Read book image generated from book_to_image.py
-   book = gd.image('/home/amarriner/public_html/book.png')
+   book = gd.image('files/book.png')
 
    # Open a file for writing
-   f = codecs.open('book.txt', 'w', encoding='utf-8')
+   f = codecs.open('files/book.txt', 'w', encoding='utf-8')
 
    # Step through each pixel in the image (left to right and top to bottom)
    # converting pixels into 3 utf-8 characters.
