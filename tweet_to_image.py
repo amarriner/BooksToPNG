@@ -99,7 +99,7 @@ class TweetToImage(TwythonStreamer):
 
          else:
 
-            print ' - Skipping tweet ' + data['text'].encode('utf-8')
+            print ' - Skipping tweet ' + data['text'].encode('utf-8') + ' from @' + data['user']['screen_name']
 
 
       elif 'event' in data:
